@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <nav class="navbar" data-theme="dark">
+    <ul>
+      <li><a href="#" data-section="home">Home</a></li>
+      <li><a href="#" data-section="projects">Projects</a></li>
+      <li><a href="#" data-section="contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" aria-label="テーマ切り替え"><i class="fas fa-moon"></i></button>
+  </nav>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="section active">
+      <h1>Welcome to My Portfolio</h1>
+      <p>40代からのエンジニア転職挑戦！Web制作・JavaScript・フロントエンド開発を中心に学習中です。</p>
+      <ul class="skills-list">
+        <li><i class="fab fa-html5"></i> HTML/CSS</li>
+        <li><i class="fab fa-js-square"></i> JavaScript</li>
+        <li><i class="fab fa-react"></i> React（学習中）</li>
+      </ul>
+      <div class="goals">
+        <h3>My Goals</h3>
+        <p>2025年内にフロントエンドエンジニアとして転職し、在宅勤務での始動を目指しています。</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="#" data-section="projects" class="btn">作品を見る</a>
+        <a href="#" data-section="contact" class="btn">連絡する</a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2><i class="fas fa-code"></i> Projects</h2>
+      <div class="projects"></div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
+      <p>お問い合わせはメールで：
+        <a href="mailto:example@example.com" class="mail-link">example@example.com</a>
+      </p>
+    </section>
+
+    <!-- Todo App Modal -->
+    <section id="todoApp" class="section app-section">
+      <h2>Todo App</h2>
+      <input type="text" id="todoInput" placeholder="タスクを入力" />
+      <button id="addTodoBtn">追加</button>
+      <ul id="todoList"></ul>
+      <button class="btn close-app">閉じる</button>
+    </section>
+
+    <!-- Weather App Modal -->
+    <section id="weatherApp" class="section app-section">
+      <h2>Weather App</h2>
+      <input type="text" id="cityInput" placeholder="都市名を入力" />
+      <button id="getWeatherBtn">天気を取得</button>
+      <div id="weatherResult"></div>
+      <button class="btn close-app">閉じる</button>
+    </section>
+  </main>
+</body>
+</html>
