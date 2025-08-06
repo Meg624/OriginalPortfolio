@@ -140,23 +140,23 @@ document.addEventListener('DOMContentLoaded', () => {
 const projects = [
   {
     title: "Todo App",
-    desc: "Vanilla JSで作成した簡易タスク管理アプリ",
+    desc: "簡易タスク管理アプリ",
     icon: "fa-list-check",
-    img: "https://via.placeholder.com/300x180?text=Todo+App",
+    img: "todo.png",
     github: "https://github.com/username/todo-app"
   },
   {
     title: "Weather App",
     desc: "APIを使って天気情報を表示",
     icon: "fa-cloud-sun",
-    img: "https://via.placeholder.com/300x180?text=Weather+App",
+    img: "weather.png",
     github: "https://github.com/username/weather-app"
   },
   {
     title: "Portfolio Site",
     desc: "自分の作品をまとめたサイト",
     icon: "fa-laptop-code",
-    img: "https://via.placeholder.com/300x180?text=Portfolio+Site",
+    img: "portfolio.png",
     github: "https://github.com/username/portfolio-site"
   }
 ];
